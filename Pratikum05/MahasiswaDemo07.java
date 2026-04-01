@@ -24,19 +24,14 @@ public class MahasiswaDemo07 {
             double ipk = sc.nextDouble();
             sc.nextLine();
 
-            Mahasiswa07 m = new Mahasiswa07(nim, nama, kelas, ipk);
-            list.tambah(m);
+            list.tambah(new Mahasiswa07(nim, nama, kelas, ipk));
         }
 
-        System.out.println("\nData mahasiswa sebelum sorting:");
+        System.out.println("\nData sebelum sorting:");
         list.tampil();
 
-        System.out.println("Data setelah Bubble Sort (DESC):");
-        list.bubbleSort();
-        list.tampil();
-
-        System.out.println("Data setelah Selection Sort (ASC):");
-        list.selectionSort();
+        System.out.println("Data setelah Insertion Sort (ASC):");
+        list.insertionSort();
         list.tampil();
     }
 }
