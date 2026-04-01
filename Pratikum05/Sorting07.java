@@ -9,16 +9,17 @@ public class Sorting07 {
         this.jmlData = jmlData;
     }
 
-    void insertionSort() {
-        for (int i = 1; i < jmlData; i++) {
-            int key = data[i];
-            int j = i - 1;
-
-            while (j >= 0 && data[j] > key) {
-                data[j + 1] = data[j];
-                j--;
+    void selectionSort() {
+        for (int i = 0; i < jmlData - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < jmlData; j++) {
+                if (data[j] < data[min]) {
+                    min = j;
+                }
             }
-            data[j + 1] = key;
+            int tmp = data[min];
+            data[min] = data[i];
+            data[i] = tmp;
         }
     }
 
