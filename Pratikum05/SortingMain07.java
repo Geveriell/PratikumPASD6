@@ -3,14 +3,14 @@ package Pratikum05;
 public class SortingMain07 {
     public static void main(String[] args) {
 
-        int data[] = {30, 20, 2, 8, 14};
-        Sorting07 s = new Sorting07(data, data.length);
+        int c[] = {40, 10, 4, 9, 3};
+        Sorting07 dataurut3 = new Sorting07(c, c.length);
 
-        System.out.println("Data awal 2");
-        s.tampil();
+        System.out.println("Data awal 3");
+        dataurut3.tampil();
 
-        System.out.println("Data sudah diurutkan dengan SELECTION SORT (ASC)");
-        s.selectionSort();
-        s.tampil();
+        System.out.println("Data sudah diurutkan dengan INSERTION SORT (ASC)");
+        dataurut3.insertionSort();
+        dataurut3.tampil();
     }
 }
